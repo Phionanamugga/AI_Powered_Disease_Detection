@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+      <div class="text-center">
+          <img src="note.jpg" alt="App Logo" class="mb-4">
+      </div>
+      <div class="registration-form bg-light p-4 rounded shadow-sm">
+          <h2 class="text-center mb-4">Register</h2>
+          <form action="main.html" method="GET">
+              <div class="form-group">
+                  <label for="username">Username:</label>
+                  <input type="text" class="form-control" id="username" name="username" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="password" class="form-control" id="password" name="password" required
+                         pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+                         title="Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character.">
+              </div>
+              <div class="form-group">
+                  <label for="confirm-password">Confirm Password:</label>
+                  <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+              </div>
+              <div class="form-group">
+                  <button type="submit" class="btn btn-primary btn-block">Register</button>
+              </div>
+          </form>
+      </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="assets/JS/registration.js"></script>
+</body>
+</html>
