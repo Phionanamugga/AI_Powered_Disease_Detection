@@ -1,1 +1,1 @@
-# EverNote_BootStrapApp
+# AI_Powered_Disease_Detection
